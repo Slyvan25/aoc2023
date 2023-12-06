@@ -5,20 +5,32 @@ class Day06 extends AbstractDay {
 
   @override
   parseInput() {
-    print('joe joe');
     // TODO: implement parseInput
+
     // throw UnimplementedError();
   }
 
   @override
   solvePart1() {
-    // TODO: implement solvePart1
-    return 'uw moeder';
+    List<int> times;
+    List<int> distances;
+    RegExp regExp = RegExp(r'-?\d+\.?\d*');
+    var localInput = regExp.allMatches(input.asString);
+
+    List<int> numbers = [];
+    for (Match match in localInput) {
+      numbers.add(int.parse(match.group(0)!));
+    }
+
+    times = [numbers[0], numbers[1], numbers[2], numbers[3]];
+    distances = [numbers[4], numbers[5], numbers[6], numbers[7]];
+    print(times);
+
+    return '';
   }
 
   @override
   solvePart2() {
-    // TODO: implement solvePart2
     return 'uw vader';
   }
 }
