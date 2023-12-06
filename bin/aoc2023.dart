@@ -58,8 +58,6 @@ void main(List<String> arguments) {
             printSolutionForDay(int.parse(inputDay), DayPart.part2);
             break;
         }
-      } else {
-        printAllSolution(enabled: true);
       }
     }
   } else {
