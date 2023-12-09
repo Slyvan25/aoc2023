@@ -3,3 +3,4 @@
 // boilerplate code creation with the CLI easier.
 
 export 'day06.dart';
+export 'day07.dart';

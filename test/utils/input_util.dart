@@ -43,6 +43,9 @@ class InputUtil {
   /// Returns input as one String.
   String get asString => _inputAsString;
 
+  /// Returns input as one list.
+  String get asList => _inputAsList.toString();
+
   /// Reads the entire input contents as lines of text.
   List<String> getPerLine() => _inputAsList;
 

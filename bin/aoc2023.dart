@@ -13,6 +13,7 @@ void main(List<String> arguments) {
   //initialize day classes
   final days = <AbstractDay>[
     Day06(),
+    Day07(),
   ];
 
   String getArgumentValue({required String argument}) {
